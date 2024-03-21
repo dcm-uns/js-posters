@@ -7,8 +7,7 @@ function buscar(){
  fetch(url)
  .then(response => response.json())
  .then(data => {
-        document.getElementById("poster").src = data.Poster;
-	document.getElementById("info").innerHTML = data.Year;
+	// insertar el poster en la pagina web
  });
 
 
