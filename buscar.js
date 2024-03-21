@@ -1,5 +1,5 @@
 
-var key="91d05c89";
+var key="INSERTAR KEY OMDBAPI";
 
 function buscar(){
  var titulo=document.getElementById("titulo").value;
@@ -7,8 +7,7 @@ function buscar(){
  fetch(url)
  .then(response => response.json())
  .then(data => {
-	console.log(data);
-    document.getElementById("poster").src = data.Poster;
+        document.getElementById("poster").src = data.Poster;
 	document.getElementById("info").innerHTML = data.Year;
  });
 
